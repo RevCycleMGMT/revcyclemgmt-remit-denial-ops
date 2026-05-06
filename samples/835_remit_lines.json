@@ -1,0 +1,32 @@
+[
+  {
+    "claim_id": "SYN-CLAIM-9001",
+    "payer": "Synthetic Payer A",
+    "billed_amount": 240.0,
+    "allowed_amount": 180.0,
+    "paid_amount": 180.0,
+    "carc": "",
+    "rarc": "",
+    "status": "paid"
+  },
+  {
+    "claim_id": "SYN-CLAIM-9002",
+    "payer": "Synthetic Payer B",
+    "billed_amount": 320.0,
+    "allowed_amount": 210.0,
+    "paid_amount": 0.0,
+    "carc": "CO-16",
+    "rarc": "M51",
+    "status": "denied"
+  },
+  {
+    "claim_id": "SYN-CLAIM-9003",
+    "payer": "Synthetic Payer A",
+    "billed_amount": 500.0,
+    "allowed_amount": 350.0,
+    "paid_amount": 290.0,
+    "carc": "CO-45",
+    "rarc": "",
+    "status": "variance"
+  }
+]

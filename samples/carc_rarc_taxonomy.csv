@@ -1,0 +1,4 @@
+code,root_cause,owner,queue
+CO-16,missing_or_invalid_information,billing lead,Claim correction
+M51,missing_medical_record,evidence owner,Documentation follow-up
+CO-45,contractual_variance,posting lead,Payment variance
