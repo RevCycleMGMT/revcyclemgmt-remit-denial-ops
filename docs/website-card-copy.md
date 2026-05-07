@@ -10,7 +10,11 @@ Matches synthetic 835 remit lines to claims, groups CARC/RARC reasons, calculate
 
 ## Button Text
 
-Publication Pending
+View Repo
+
+## Public Repo
+
+https://github.com/RevCycleMGMT/revcyclemgmt-remit-denial-ops
 
 ## Buyer Takeaway
 
