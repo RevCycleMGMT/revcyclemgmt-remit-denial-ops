@@ -1,0 +1,20 @@
+{
+  "queue": "Claim correction",
+  "owner": "billing lead",
+  "claim_count": 1,
+  "dollar_exposure": 210.0,
+  "items": [
+    {
+      "claim_id": "SYN-CLAIM-9002",
+      "payer": "Synthetic Payer B",
+      "codes": [
+        "CO-16",
+        "M51"
+      ],
+      "root_cause": "missing_or_invalid_information",
+      "recommended_action": "Correct missing claim information and resubmit.",
+      "dollar_exposure": 210.0
+    }
+  ],
+  "public_boundary": "Synthetic denial queue excerpt. No PHI, real remit files, contract terms, or production payer records."
+}

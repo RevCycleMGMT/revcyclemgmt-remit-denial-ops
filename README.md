@@ -10,6 +10,8 @@ This repository is a public proof package for RevCycleMGMT's post-adjudication o
 
 The buyer signal is simple: when payment or denial files arrive, the practice should not be left with raw remit noise. The workflow should tell the team what paid, what underpaid, what denied, who owns the fix, and which payer behavior needs leadership attention.
 
+![RevCycleMGMT synthetic remit and denial operations proof](docs/assets/remit-denial-ops-proof.svg)
+
 ## What This Proves
 
 | Proof area | What the repo demonstrates | Buyer value |
@@ -19,6 +21,29 @@ The buyer signal is simple: when payment or denial files arrive, the practice sh
 | Denial routing | CARC/RARC codes map to owner-ready queues such as claim correction, authorization follow-up, and medical necessity review. | Billing, front desk, evidence, and posting ownership becomes visible. |
 | Payer scorecards | Payers are ranked by denial count, variance exposure, paid amount, and remit lag. | Small practices can see which routes create revenue drag. |
 | Local control room | A Streamlit console presents metrics, queue detail, payer behavior, 835 preview, and audit events. | The proof can be inspected locally without production data or external services. |
+
+## Visual Proof Artifact
+
+The generated SVG above is built from `samples/835_remit_lines.json` and `samples/carc_rarc_taxonomy.csv`. It gives a buyer the post-adjudication proof in one screen:
+
+| Lane | What it shows |
+| --- | --- |
+| Executive metrics | Remit count, matched cash, payment variance, denial count, denial rate, and denied allowed exposure. |
+| Cash recovery example | A synthetic denied claim tied to payer, CARC/RARC codes, recommended action, and owner-ready correction queue. |
+| 835 preview | Synthetic CLP/CAS-style remit excerpt that shows what the parser is interpreting. |
+| Workqueues | Claim correction, authorization, medical necessity, and payment variance queues with owner and exposure. |
+| Payer scorecard | Which synthetic payer route is creating the most cash drag. |
+| Recovery workflow | 835 intake -> matchback -> variance -> CARC/RARC -> follow-up -> scorecard. |
+
+Regenerate the public proof artifact:
+
+```bash
+python -m revcyclemgmt_remit_denial.proof_artifacts \
+  --remit samples/835_remit_lines.json \
+  --taxonomy samples/carc_rarc_taxonomy.csv \
+  --out output_demo
+cp output_demo/remit_denial_ops_proof.svg docs/assets/remit-denial-ops-proof.svg
+```
 
 ## Workflow
 
@@ -59,6 +84,10 @@ pip install -e ".[app,test]"
 PYTHONPATH=src python3 -m revcyclemgmt_remit_denial.ops \
   samples/835_remit_lines.json \
   samples/carc_rarc_taxonomy.csv \
+  --out output_demo
+PYTHONPATH=src python3 -m revcyclemgmt_remit_denial.proof_artifacts \
+  --remit samples/835_remit_lines.json \
+  --taxonomy samples/carc_rarc_taxonomy.csv \
   --out output_demo
 pytest -q
 ```
@@ -108,6 +137,15 @@ The console opens with six synthetic remit scenarios and lets you inspect:
 | `SYN-CLAIM-9005` | Synthetic Payer B | `CO-197`, `N115` | Authorization follow-up | front desk lead | Confirm authorization record and appeal or rebill when supported. |
 | `SYN-CLAIM-9006` | Synthetic Payer D | `CO-50`, `N620` | Medical necessity review | evidence owner | Review documentation support and payer policy. |
 
+## Generated Proof Artifacts
+
+| Output | Purpose |
+| --- | --- |
+| `docs/assets/remit-denial-ops-proof.svg` | GitHub-rendered executive proof visual shown at the top of this README. |
+| `output_demo/remit_denial_ops_proof.svg` | Regenerated SVG from the current synthetic remit scenario. |
+| `output_demo/remit_denial_ops_summary.json` | Buyer-readable summary of remit count, cash, variance, denial exposure, payer drag, and X12 workflow coverage. |
+| `output_demo/denial_workqueue_excerpt.json` | Focused synthetic queue excerpt showing owner, claim count, exposure, CARC/RARC context, root cause, and action. |
+
 ## Repository Layout
 
 ```text
@@ -115,8 +153,10 @@ apps/remit_denial_console.py              # Streamlit proof console
 samples/835_remit_lines.json              # Synthetic remit scenario
 samples/carc_rarc_taxonomy.csv            # Synthetic CARC/RARC routing table
 src/revcyclemgmt_remit_denial/ops.py      # Reconciliation and workqueue engine
+src/revcyclemgmt_remit_denial/proof_artifacts.py # README SVG and public proof JSON generator
 output_demo/                              # Generated proof artifacts
 tests/test_ops.py                         # Unit tests for matchback, metrics, routing, and artifacts
+docs/assets/remit-denial-ops-proof.svg    # Public README visual
 docs/website-card-copy.md                 # Portfolio card copy
 docs/x12-api-remit-workflow.md            # Clearinghouse/API remit alignment notes
 COMPLIANCE.md

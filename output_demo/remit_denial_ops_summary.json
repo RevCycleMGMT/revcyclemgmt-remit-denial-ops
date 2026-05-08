@@ -1,0 +1,63 @@
+{
+  "scenario": "synthetic-remit-denial-ops",
+  "remit_lines": 6,
+  "total_allowed": 1360.0,
+  "total_paid": 870.0,
+  "payment_variance": 450.0,
+  "denial_exposure": 410.0,
+  "denied_count": 2,
+  "denial_rate": 0.333,
+  "queue_count": 6,
+  "average_days_to_remit": 6.3,
+  "top_queue": {
+    "queue": "Claim correction",
+    "owner": "billing lead",
+    "items": [
+      {
+        "claim_id": "SYN-CLAIM-9002",
+        "payer": "Synthetic Payer B",
+        "status": "denied",
+        "billed_amount": 320.0,
+        "allowed_amount": 210.0,
+        "paid_amount": 0.0,
+        "patient_responsibility": 0.0,
+        "contractual_adjustment": 110.0,
+        "payment_gap": 210.0,
+        "dollar_exposure": 210.0,
+        "codes": [
+          "CO-16",
+          "M51"
+        ],
+        "root_cause": "missing_or_invalid_information",
+        "queue": "Claim correction",
+        "owner": "billing lead",
+        "recommended_action": "Correct missing claim information and resubmit.",
+        "trace_number": "TRN-9002",
+        "service_date": "2026-05-01",
+        "remit_date": "2026-05-08",
+        "days_to_remit": 7,
+        "variance_type": "denial"
+      }
+    ],
+    "dollar_exposure": 210.0,
+    "claim_count": 1
+  },
+  "top_payer": {
+    "payer": "Synthetic Payer B",
+    "claim_count": 2,
+    "denied_count": 2,
+    "denial_rate": 1.0,
+    "payment_variance": 310.0,
+    "paid_amount": 100.0,
+    "average_days_to_remit": 8.0,
+    "top_root_cause": "missing_or_invalid_information"
+  },
+  "workflow": [
+    "835 ERA",
+    "835 -> source claim",
+    "CARC / RARC",
+    "835 CAS / CLP balancing",
+    "835 trend metrics"
+  ],
+  "public_boundary": "Synthetic proof only; no PHI, production 835s, payer credentials, or clearinghouse credentials."
+}

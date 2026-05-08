@@ -1,0 +1,168 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="900" viewBox="0 0 1280 900" role="img" aria-labelledby="title desc">
+  <title id="title">RevCycleMGMT remit and denial operations proof</title>
+  <desc id="desc">Synthetic proof visual showing 835 remit matchback, payment variance, CARC/RARC denial queues, payer scorecards, and cash recovery actions.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#0d1718"/>
+      <stop offset=".52" stop-color="#070b0d"/>
+      <stop offset="1" stop-color="#111827"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="26%" cy="15%" r="68%">
+      <stop offset="0" stop-color="#00B3A4" stop-opacity=".24"/>
+      <stop offset=".42" stop-color="#00B3A4" stop-opacity=".08"/>
+      <stop offset="1" stop-color="#00B3A4" stop-opacity="0"/>
+    </radialGradient>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#00B3A4"/>
+    </marker>
+  </defs>
+  <rect width="1280" height="900" fill="url(#bg)"/>
+  <rect width="1280" height="900" fill="url(#glow)"/>
+  <path d="M 0 840 C 220 758, 478 942, 760 840 S 1130 804, 1280 860" stroke="#00B3A4" stroke-opacity=".18" stroke-width="2" fill="none"/>
+
+  <text x="64" y="62" fill="#f8fafc" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="900" text-anchor="start" opacity="1">Remit And Denial Ops Control Room</text>
+  <text x="64" y="96" fill="#cbd5e1" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="500" text-anchor="start" opacity="1">Synthetic 835 remit lines become claim matchback, payment variance, CARC/RARC workqueues, payer</text>
+<text x="64" y="120" fill="#cbd5e1" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="500" text-anchor="start" opacity="1">behavior, and cash recovery visibility.</text>
+  <text x="64" y="144" fill="#83f7f4" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="900" text-anchor="start" opacity="1">Post-adjudication cash recovery proof</text>
+
+  <rect x="64" y="176" width="204" height="92" rx="8" fill="rgba(10,16,18,.82)" stroke="rgba(131,247,244,.25)" stroke-width="1.2"/>
+<text x="82" y="204" fill="#83f7f4" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="800" text-anchor="start" opacity="1">REMITS</text>
+<text x="82" y="236" fill="#83f7f4" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="900" text-anchor="start" opacity="1">6</text>
+<text x="82" y="256" fill="#94a3b8" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="600" text-anchor="start" opacity="1">synthetic lines</text>
+  <rect x="288" y="176" width="204" height="92" rx="8" fill="rgba(10,16,18,.82)" stroke="rgba(131,247,244,.25)" stroke-width="1.2"/>
+<text x="306" y="204" fill="#83f7f4" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="800" text-anchor="start" opacity="1">PAID</text>
+<text x="306" y="236" fill="#83f7f4" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="900" text-anchor="start" opacity="1">$870</text>
+<text x="306" y="256" fill="#94a3b8" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="600" text-anchor="start" opacity="1">matched cash</text>
+  <rect x="512" y="176" width="204" height="92" rx="8" fill="rgba(10,16,18,.82)" stroke="rgba(131,247,244,.25)" stroke-width="1.2"/>
+<text x="530" y="204" fill="#83f7f4" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="800" text-anchor="start" opacity="1">VARIANCE</text>
+<text x="530" y="236" fill="#FFD166" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="900" text-anchor="start" opacity="1">$450</text>
+<text x="530" y="256" fill="#94a3b8" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="600" text-anchor="start" opacity="1">cash gap</text>
+  <rect x="736" y="176" width="204" height="92" rx="8" fill="rgba(10,16,18,.82)" stroke="rgba(131,247,244,.25)" stroke-width="1.2"/>
+<text x="754" y="204" fill="#83f7f4" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="800" text-anchor="start" opacity="1">DENIALS</text>
+<text x="754" y="236" fill="#FF6B6B" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="900" text-anchor="start" opacity="1">2</text>
+<text x="754" y="256" fill="#94a3b8" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="600" text-anchor="start" opacity="1">33.3% denial rate</text>
+  <rect x="960" y="176" width="204" height="92" rx="8" fill="rgba(10,16,18,.82)" stroke="rgba(131,247,244,.25)" stroke-width="1.2"/>
+<text x="978" y="204" fill="#83f7f4" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="800" text-anchor="start" opacity="1">EXPOSURE</text>
+<text x="978" y="236" fill="#FFD166" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="900" text-anchor="start" opacity="1">$410</text>
+<text x="978" y="256" fill="#94a3b8" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="600" text-anchor="start" opacity="1">denied allowed</text>
+
+  <rect x="64" y="306" width="676" height="214" rx="8" fill="rgba(5,10,12,.82)" stroke="rgba(0,179,164,.34)" stroke-width="1.2"/>
+  <text x="88" y="338" fill="#f8fafc" font-family="Inter, Arial, sans-serif" font-size="21" font-weight="900" text-anchor="start" opacity="1">Cash recovery example</text>
+  <text x="88" y="370" fill="#83f7f4" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="900" text-anchor="start" opacity="1">SYN-CLAIM-9002 -&gt; Claim correction</text>
+  <text x="88" y="402" fill="#f8fafc" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="800" text-anchor="start" opacity="1">Payer: Synthetic Payer B</text>
+  <text x="88" y="428" fill="#FFD166" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="800" text-anchor="start" opacity="1">Codes: CO-16, M51</text>
+  <text x="88" y="458" fill="#cbd5e1" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="500" text-anchor="start" opacity="1">Correct missing claim information and</text>
+<text x="88" y="476" fill="#cbd5e1" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="500" text-anchor="start" opacity="1">resubmit.</text>
+  <line x1="424" y1="334" x2="424" y2="496" stroke="rgba(131,247,244,.18)"/>
+  <text x="462" y="338" fill="#f8fafc" font-family="Inter, Arial, sans-serif" font-size="21" font-weight="900" text-anchor="start" opacity="1">835 preview excerpt</text>
+  <text x="462" y="390" fill="#d1f7f4" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="800" text-anchor="start" opacity="1">ST*835*0002~</text>
+<text x="462" y="415" fill="#d1f7f4" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="800" text-anchor="start" opacity="1">CLP*SYN-CLAIM-9002*4*...~</text>
+<text x="462" y="440" fill="#d1f7f4" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="800" text-anchor="start" opacity="1">CAS*CO*16*210.00~</text>
+<text x="462" y="465" fill="#d1f7f4" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="800" text-anchor="start" opacity="1">TRN*1*TRN-9002*...~</text>
+
+  <rect x="764" y="306" width="456" height="354" rx="8" fill="rgba(5,10,12,.70)" stroke="rgba(131,247,244,.25)" stroke-width="1.2"/>
+  <text x="790" y="338" fill="#f8fafc" font-family="Inter, Arial, sans-serif" font-size="21" font-weight="900" text-anchor="start" opacity="1">Owner-ready workqueues</text>
+  <text x="790" y="364" fill="#83f7f4" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="800" text-anchor="start" opacity="1">Denials and variances are routed before cash stalls.</text>
+  <rect x="774" y="386" width="424" height="58" rx="8" fill="rgba(255,255,255,.035)" stroke="rgba(131,247,244,.18)" stroke-width="1.2"/>
+<circle cx="796" cy="415" r="6" fill="#FFD166"/>
+<text x="814" y="411" fill="#f8fafc" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="900" text-anchor="start" opacity="1">Claim correction</text>
+<text x="814" y="431" fill="#94a3b8" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="700" text-anchor="start" opacity="1">billing lead</text>
+<text x="1020" y="411" fill="#f8fafc" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="900" text-anchor="start" opacity="1">1</text>
+<text x="1020" y="431" fill="#94a3b8" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="700" text-anchor="start" opacity="1">claims</text>
+<text x="1104" y="411" fill="#FFD166" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="900" text-anchor="start" opacity="1">$210</text>
+<text x="1104" y="431" fill="#94a3b8" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="700" text-anchor="start" opacity="1">exposure</text>
+<rect x="774" y="452" width="424" height="58" rx="8" fill="rgba(255,255,255,.035)" stroke="rgba(131,247,244,.18)" stroke-width="1.2"/>
+<circle cx="796" cy="481" r="6" fill="#FFD166"/>
+<text x="814" y="477" fill="#f8fafc" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="900" text-anchor="start" opacity="1">Authorization follow-up</text>
+<text x="814" y="497" fill="#94a3b8" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="700" text-anchor="start" opacity="1">front desk lead</text>
+<text x="1020" y="477" fill="#f8fafc" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="900" text-anchor="start" opacity="1">1</text>
+<text x="1020" y="497" fill="#94a3b8" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="700" text-anchor="start" opacity="1">claims</text>
+<text x="1104" y="477" fill="#FFD166" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="900" text-anchor="start" opacity="1">$100</text>
+<text x="1104" y="497" fill="#94a3b8" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="700" text-anchor="start" opacity="1">exposure</text>
+<rect x="774" y="518" width="424" height="58" rx="8" fill="rgba(255,255,255,.035)" stroke="rgba(131,247,244,.18)" stroke-width="1.2"/>
+<circle cx="796" cy="547" r="6" fill="#FFD166"/>
+<text x="814" y="543" fill="#f8fafc" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="900" text-anchor="start" opacity="1">Medical necessity review</text>
+<text x="814" y="563" fill="#94a3b8" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="700" text-anchor="start" opacity="1">evidence owner</text>
+<text x="1020" y="543" fill="#f8fafc" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="900" text-anchor="start" opacity="1">1</text>
+<text x="1020" y="563" fill="#94a3b8" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="700" text-anchor="start" opacity="1">claims</text>
+<text x="1104" y="543" fill="#FFD166" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="900" text-anchor="start" opacity="1">$80</text>
+<text x="1104" y="563" fill="#94a3b8" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="700" text-anchor="start" opacity="1">exposure</text>
+<rect x="774" y="584" width="424" height="58" rx="8" fill="rgba(255,255,255,.035)" stroke="rgba(131,247,244,.18)" stroke-width="1.2"/>
+<circle cx="796" cy="613" r="6" fill="#FFD166"/>
+<text x="814" y="609" fill="#f8fafc" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="900" text-anchor="start" opacity="1">Payment variance</text>
+<text x="814" y="629" fill="#94a3b8" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="700" text-anchor="start" opacity="1">posting lead</text>
+<text x="1020" y="609" fill="#f8fafc" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="900" text-anchor="start" opacity="1">1</text>
+<text x="1020" y="629" fill="#94a3b8" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="700" text-anchor="start" opacity="1">claims</text>
+<text x="1104" y="609" fill="#FFD166" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="900" text-anchor="start" opacity="1">$60</text>
+<text x="1104" y="629" fill="#94a3b8" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="700" text-anchor="start" opacity="1">exposure</text>
+
+  <rect x="64" y="544" width="382" height="174" rx="8" fill="rgba(5,10,12,.66)" stroke="rgba(131,247,244,.20)" stroke-width="1.2"/>
+  <text x="88" y="576" fill="#f8fafc" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="900" text-anchor="start" opacity="1">Payer behavior scorecard</text>
+  <text x="88" y="600" fill="#83f7f4" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="800" text-anchor="start" opacity="1">Which route is creating drag?</text>
+  <rect x="82" y="620" width="358" height="52" rx="8" fill="rgba(255,255,255,.03)" stroke="rgba(131,247,244,.16)" stroke-width="1.2"/>
+<text x="100" y="643" fill="#f8fafc" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="900" text-anchor="start" opacity="1">Synthetic Payer B</text>
+<text x="100" y="662" fill="#94a3b8" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="700" text-anchor="start" opacity="1">missing_or_invalid_information</text>
+<text x="290" y="643" fill="#FF6B6B" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="900" text-anchor="start" opacity="1">100.0%</text>
+<text x="290" y="662" fill="#94a3b8" font-family="Inter, Arial, sans-serif" font-size="10" font-weight="700" text-anchor="start" opacity="1">denial rate</text>
+<text x="374" y="643" fill="#FFD166" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="900" text-anchor="start" opacity="1">$310</text>
+<text x="374" y="662" fill="#94a3b8" font-family="Inter, Arial, sans-serif" font-size="10" font-weight="700" text-anchor="start" opacity="1">variance</text>
+<rect x="82" y="674" width="358" height="52" rx="8" fill="rgba(255,255,255,.03)" stroke="rgba(131,247,244,.16)" stroke-width="1.2"/>
+<text x="100" y="697" fill="#f8fafc" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="900" text-anchor="start" opacity="1">Synthetic Payer D</text>
+<text x="100" y="716" fill="#94a3b8" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="700" text-anchor="start" opacity="1">medical_necessity</text>
+<text x="290" y="697" fill="#FF6B6B" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="900" text-anchor="start" opacity="1">0.0%</text>
+<text x="290" y="716" fill="#94a3b8" font-family="Inter, Arial, sans-serif" font-size="10" font-weight="700" text-anchor="start" opacity="1">denial rate</text>
+<text x="374" y="697" fill="#FFD166" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="900" text-anchor="start" opacity="1">$80</text>
+<text x="374" y="716" fill="#94a3b8" font-family="Inter, Arial, sans-serif" font-size="10" font-weight="700" text-anchor="start" opacity="1">variance</text>
+
+  <text x="486" y="720" fill="#f8fafc" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="900" text-anchor="start" opacity="1">Remit-to-recovery workflow</text>
+  <rect x="64" y="736" width="176" height="110" rx="8" fill="rgba(7,13,15,.88)" stroke="rgba(0,179,164,.40)" stroke-width="1.2"/>
+<circle cx="84" cy="763" r="6" fill="#00B3A4"/>
+<text x="100" y="769" fill="#f8fafc" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="900" text-anchor="start" opacity="1">835 intake</text>
+<text x="82" y="798" fill="#cbd5e1" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="500" text-anchor="start" opacity="1">Synthetic ERA line</text>
+<text x="82" y="814" fill="#cbd5e1" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="500" text-anchor="start" opacity="1">enters the cash...</text>
+<rect x="82" y="818" width="94" height="20" rx="10" fill="rgba(0,179,164,.12)" stroke="rgba(131,247,244,.28)"/>
+<text x="129" y="832" fill="#83f7f4" font-family="Inter, Arial, sans-serif" font-size="10" font-weight="800" text-anchor="middle" opacity="1">835</text>
+<rect x="266" y="736" width="176" height="110" rx="8" fill="rgba(7,13,15,.88)" stroke="rgba(0,179,164,.40)" stroke-width="1.2"/>
+<circle cx="286" cy="763" r="6" fill="#00B3A4"/>
+<text x="302" y="769" fill="#f8fafc" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="900" text-anchor="start" opacity="1">Matchback</text>
+<text x="284" y="798" fill="#cbd5e1" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="500" text-anchor="start" opacity="1">Payment line ties</text>
+<text x="284" y="814" fill="#cbd5e1" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="500" text-anchor="start" opacity="1">back to source claim...</text>
+<rect x="284" y="818" width="94" height="20" rx="10" fill="rgba(0,179,164,.12)" stroke="rgba(131,247,244,.28)"/>
+<text x="331" y="832" fill="#83f7f4" font-family="Inter, Arial, sans-serif" font-size="10" font-weight="800" text-anchor="middle" opacity="1">CLAIM</text>
+<rect x="468" y="736" width="176" height="110" rx="8" fill="rgba(7,13,15,.88)" stroke="rgba(0,179,164,.40)" stroke-width="1.2"/>
+<circle cx="488" cy="763" r="6" fill="#00B3A4"/>
+<text x="504" y="769" fill="#f8fafc" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="900" text-anchor="start" opacity="1">Variance</text>
+<text x="486" y="798" fill="#cbd5e1" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="500" text-anchor="start" opacity="1">Allowed, paid,</text>
+<text x="486" y="814" fill="#cbd5e1" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="500" text-anchor="start" opacity="1">patient, and gap...</text>
+<rect x="486" y="818" width="94" height="20" rx="10" fill="rgba(0,179,164,.12)" stroke="rgba(131,247,244,.28)"/>
+<text x="533" y="832" fill="#83f7f4" font-family="Inter, Arial, sans-serif" font-size="10" font-weight="800" text-anchor="middle" opacity="1">BALANCE</text>
+<rect x="670" y="736" width="176" height="110" rx="8" fill="rgba(7,13,15,.88)" stroke="rgba(0,179,164,.40)" stroke-width="1.2"/>
+<circle cx="690" cy="763" r="6" fill="#00B3A4"/>
+<text x="706" y="769" fill="#f8fafc" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="900" text-anchor="start" opacity="1">CARC/RARC</text>
+<text x="688" y="798" fill="#cbd5e1" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="500" text-anchor="start" opacity="1">Reason codes become</text>
+<text x="688" y="814" fill="#cbd5e1" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="500" text-anchor="start" opacity="1">root-cause queues.</text>
+<rect x="688" y="818" width="94" height="20" rx="10" fill="rgba(0,179,164,.12)" stroke="rgba(131,247,244,.28)"/>
+<text x="735" y="832" fill="#83f7f4" font-family="Inter, Arial, sans-serif" font-size="10" font-weight="800" text-anchor="middle" opacity="1">CODES</text>
+<rect x="872" y="736" width="176" height="110" rx="8" fill="rgba(7,13,15,.88)" stroke="rgba(0,179,164,.40)" stroke-width="1.2"/>
+<circle cx="892" cy="763" r="6" fill="#00B3A4"/>
+<text x="908" y="769" fill="#f8fafc" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="900" text-anchor="start" opacity="1">Follow-up</text>
+<text x="890" y="798" fill="#cbd5e1" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="500" text-anchor="start" opacity="1">Owner and action are</text>
+<text x="890" y="814" fill="#cbd5e1" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="500" text-anchor="start" opacity="1">assigned before cash...</text>
+<rect x="890" y="818" width="94" height="20" rx="10" fill="rgba(0,179,164,.12)" stroke="rgba(131,247,244,.28)"/>
+<text x="937" y="832" fill="#83f7f4" font-family="Inter, Arial, sans-serif" font-size="10" font-weight="800" text-anchor="middle" opacity="1">ACTION</text>
+<rect x="1074" y="736" width="176" height="110" rx="8" fill="rgba(7,13,15,.88)" stroke="rgba(0,179,164,.40)" stroke-width="1.2"/>
+<circle cx="1094" cy="763" r="6" fill="#00B3A4"/>
+<text x="1110" y="769" fill="#f8fafc" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="900" text-anchor="start" opacity="1">Scorecard</text>
+<text x="1092" y="798" fill="#cbd5e1" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="500" text-anchor="start" opacity="1">Payer drag becomes</text>
+<text x="1092" y="814" fill="#cbd5e1" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="500" text-anchor="start" opacity="1">leadership...</text>
+<rect x="1092" y="818" width="94" height="20" rx="10" fill="rgba(0,179,164,.12)" stroke="rgba(131,247,244,.28)"/>
+<text x="1139" y="832" fill="#83f7f4" font-family="Inter, Arial, sans-serif" font-size="10" font-weight="800" text-anchor="middle" opacity="1">KPI</text>
+  <path d="M 240 791 L 266 791" stroke="#00B3A4" stroke-width="3" marker-end="url(#arrow)"/>
+<path d="M 442 791 L 468 791" stroke="#00B3A4" stroke-width="3" marker-end="url(#arrow)"/>
+<path d="M 644 791 L 670 791" stroke="#00B3A4" stroke-width="3" marker-end="url(#arrow)"/>
+<path d="M 846 791 L 872 791" stroke="#00B3A4" stroke-width="3" marker-end="url(#arrow)"/>
+<path d="M 1048 791 L 1074 791" stroke="#00B3A4" stroke-width="3" marker-end="url(#arrow)"/>
+
+  <rect x="64" y="860" width="1152" height="28" rx="14" fill="rgba(0,179,164,.10)" stroke="rgba(131,247,244,.22)"/>
+  <text x="640" y="879" fill="#d1f7f4" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="800" text-anchor="middle" opacity="1">Public proof uses synthetic data only: no PHI, no production 835s, no payer credentials, no clearinghouse credentials.</text>
+</svg>

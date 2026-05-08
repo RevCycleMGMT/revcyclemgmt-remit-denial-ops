@@ -14,6 +14,7 @@ from revcyclemgmt_remit_denial.ops import (
     reconcile_line,
     run,
 )
+from revcyclemgmt_remit_denial.proof_artifacts import run as proof_artifacts_run
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -100,6 +101,33 @@ class RemitDenialOpsTest(unittest.TestCase):
 
             metrics = json.loads((output_dir / "remit_metrics.json").read_text(encoding="utf-8"))
             self.assertEqual(metrics["remit_lines"], 6)
+
+    def test_public_proof_artifacts_show_cash_recovery_and_denial_queues(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            output_dir = Path(tmp)
+            result = proof_artifacts_run(REMIT_PATH, TAXONOMY_PATH, output_dir)
+
+            self.assertEqual(result["remit_lines"], 6)
+            self.assertEqual(result["denied_count"], 2)
+            self.assertEqual(result["queue_count"], 6)
+            self.assertEqual(result["artifact_count"], 3)
+
+            summary = json.loads((output_dir / "remit_denial_ops_summary.json").read_text(encoding="utf-8"))
+            excerpt = json.loads((output_dir / "denial_workqueue_excerpt.json").read_text(encoding="utf-8"))
+            svg = (output_dir / "remit_denial_ops_proof.svg").read_text(encoding="utf-8")
+
+            self.assertIn("835 ERA", summary["workflow"])
+            self.assertIn("CARC / RARC", summary["workflow"])
+            self.assertIn("835 trend metrics", summary["workflow"])
+            self.assertIn("Synthetic proof only", summary["public_boundary"])
+            self.assertGreater(summary["payment_variance"], 0)
+            self.assertGreater(summary["denial_exposure"], 0)
+            self.assertIn("Synthetic denial queue excerpt", excerpt["public_boundary"])
+            self.assertIn("Remit And Denial Ops Control Room", svg)
+            self.assertIn("Cash recovery example", svg)
+            self.assertIn("Owner-ready workqueues", svg)
+            self.assertIn("CARC/RARC", svg)
+            self.assertIn("no PHI", svg)
 
 
 if __name__ == "__main__":
