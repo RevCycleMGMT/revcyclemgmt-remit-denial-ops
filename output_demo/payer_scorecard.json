@@ -1,0 +1,42 @@
+[
+  {
+    "payer": "Synthetic Payer B",
+    "claim_count": 2,
+    "denied_count": 2,
+    "denial_rate": 1.0,
+    "payment_variance": 310.0,
+    "paid_amount": 100.0,
+    "average_days_to_remit": 8.0,
+    "top_root_cause": "missing_or_invalid_information"
+  },
+  {
+    "payer": "Synthetic Payer D",
+    "claim_count": 1,
+    "denied_count": 0,
+    "denial_rate": 0.0,
+    "payment_variance": 80.0,
+    "paid_amount": 220.0,
+    "average_days_to_remit": 9.0,
+    "top_root_cause": "medical_necessity"
+  },
+  {
+    "payer": "Synthetic Payer A",
+    "claim_count": 2,
+    "denied_count": 0,
+    "denial_rate": 0.0,
+    "payment_variance": 60.0,
+    "paid_amount": 470.0,
+    "average_days_to_remit": 5.5,
+    "top_root_cause": "contractual_variance"
+  },
+  {
+    "payer": "Synthetic Payer C",
+    "claim_count": 1,
+    "denied_count": 0,
+    "denial_rate": 0.0,
+    "payment_variance": 0.0,
+    "paid_amount": 80.0,
+    "average_days_to_remit": 2.0,
+    "top_root_cause": "patient_responsibility"
+  }
+]

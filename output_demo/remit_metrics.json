@@ -1,0 +1,11 @@
+{
+  "remit_lines": 6,
+  "total_allowed": 1360.0,
+  "total_paid": 870.0,
+  "total_payment_variance": 450.0,
+  "total_denial_exposure": 410.0,
+  "denied_count": 2,
+  "denial_rate": 0.333,
+  "queue_count": 6,
+  "average_days_to_remit": 6.3
+}

@@ -1,0 +1,74 @@
+[
+  {
+    "timestamp": "2026-05-05T12:00:00+00:00",
+    "claim_id": "SYN-CLAIM-9001",
+    "event": "remit_matchback",
+    "detail": "835 line matched to claim with status paid."
+  },
+  {
+    "timestamp": "2026-05-05T12:00:00+00:00",
+    "claim_id": "SYN-CLAIM-9001",
+    "event": "workqueue_route",
+    "detail": "Routed to Paid and matched owned by posting lead."
+  },
+  {
+    "timestamp": "2026-05-08T12:00:00+00:00",
+    "claim_id": "SYN-CLAIM-9002",
+    "event": "remit_matchback",
+    "detail": "835 line matched to claim with status denied."
+  },
+  {
+    "timestamp": "2026-05-08T12:00:00+00:00",
+    "claim_id": "SYN-CLAIM-9002",
+    "event": "workqueue_route",
+    "detail": "Routed to Claim correction owned by billing lead."
+  },
+  {
+    "timestamp": "2026-05-09T12:00:00+00:00",
+    "claim_id": "SYN-CLAIM-9003",
+    "event": "remit_matchback",
+    "detail": "835 line matched to claim with status variance."
+  },
+  {
+    "timestamp": "2026-05-09T12:00:00+00:00",
+    "claim_id": "SYN-CLAIM-9003",
+    "event": "workqueue_route",
+    "detail": "Routed to Payment variance owned by posting lead."
+  },
+  {
+    "timestamp": "2026-05-04T12:00:00+00:00",
+    "claim_id": "SYN-CLAIM-9004",
+    "event": "remit_matchback",
+    "detail": "835 line matched to claim with status patient_responsibility."
+  },
+  {
+    "timestamp": "2026-05-04T12:00:00+00:00",
+    "claim_id": "SYN-CLAIM-9004",
+    "event": "workqueue_route",
+    "detail": "Routed to Patient responsibility posting owned by posting lead."
+  },
+  {
+    "timestamp": "2026-05-12T12:00:00+00:00",
+    "claim_id": "SYN-CLAIM-9005",
+    "event": "remit_matchback",
+    "detail": "835 line matched to claim with status denied."
+  },
+  {
+    "timestamp": "2026-05-12T12:00:00+00:00",
+    "claim_id": "SYN-CLAIM-9005",
+    "event": "workqueue_route",
+    "detail": "Routed to Authorization follow-up owned by front desk lead."
+  },
+  {
+    "timestamp": "2026-05-13T12:00:00+00:00",
+    "claim_id": "SYN-CLAIM-9006",
+    "event": "remit_matchback",
+    "detail": "835 line matched to claim with status partial."
+  },
+  {
+    "timestamp": "2026-05-13T12:00:00+00:00",
+    "claim_id": "SYN-CLAIM-9006",
+    "event": "workqueue_route",
+    "detail": "Routed to Medical necessity review owned by evidence owner."
+  }
+]

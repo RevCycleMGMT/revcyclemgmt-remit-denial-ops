@@ -1,4 +1,9 @@
-code,root_cause,owner,queue
-CO-16,missing_or_invalid_information,billing lead,Claim correction
-M51,missing_medical_record,evidence owner,Documentation follow-up
-CO-45,contractual_variance,posting lead,Payment variance
+code,root_cause,owner,queue,action
+CO-16,missing_or_invalid_information,billing lead,Claim correction,Correct missing claim information and resubmit.
+M51,missing_medical_record,evidence owner,Documentation follow-up,Attach or retrieve documentation support.
+CO-45,contractual_variance,posting lead,Payment variance,Review contract allowance and posting rule.
+PR-1,patient_responsibility,posting lead,Patient responsibility posting,Post patient responsibility and suppress denial follow-up.
+CO-197,authorization_or_precertification,front desk lead,Authorization follow-up,Confirm authorization record and appeal or rebill when supported.
+N115,missing_prior_authorization,front desk lead,Authorization follow-up,Locate authorization evidence before appeal.
+CO-50,medical_necessity,evidence owner,Medical necessity review,Review documentation support and payer policy.
+N620,documentation_not_supported,evidence owner,Medical necessity review,Strengthen documentation packet before appeal.

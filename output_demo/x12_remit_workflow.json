@@ -1,0 +1,37 @@
+[
+  {
+    "stage": "1. Remit intake",
+    "transaction": "835 ERA",
+    "artifact": "remit_lines.json",
+    "handoff": "Capture payer payment, adjustment, trace, and CARC/RARC context.",
+    "api_alignment": "Reports, remittance, or ERA mailbox retrieval workflow."
+  },
+  {
+    "stage": "2. Claim matchback",
+    "transaction": "835 -> source claim",
+    "artifact": "reconciled_remits.json",
+    "handoff": "Tie paid, denied, or adjusted remit lines back to submitted claim IDs.",
+    "api_alignment": "Claim-level reconciliation after 837 submission and acknowledgment tracking."
+  },
+  {
+    "stage": "3. Denial taxonomy",
+    "transaction": "CARC / RARC",
+    "artifact": "denial_workqueues.json",
+    "handoff": "Group denial reasons into owner-ready queues.",
+    "api_alignment": "Response normalization for follow-up operations."
+  },
+  {
+    "stage": "4. Payment variance",
+    "transaction": "835 CAS / CLP balancing",
+    "artifact": "payment_variance_report.json",
+    "handoff": "Separate contractual, underpayment, patient responsibility, and missing-payment exposure.",
+    "api_alignment": "Payment posting, variance, and contract-review workflow."
+  },
+  {
+    "stage": "5. Payer behavior",
+    "transaction": "835 trend metrics",
+    "artifact": "payer_scorecard.json",
+    "handoff": "Rank payers by denial count, variance exposure, and average payment lag.",
+    "api_alignment": "Leadership dashboard, payer-route monitoring, and 276/277 follow-up context."
+  }
+]
